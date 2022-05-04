@@ -22,6 +22,7 @@ pipeline {
 
  }
 
+stages {
  stage ('Build') {
 
 steps {
@@ -30,7 +31,7 @@ steps {
 
  sh "npm run build"
 
-}
+}}
 
  stage ('Unit Tests') {
 
