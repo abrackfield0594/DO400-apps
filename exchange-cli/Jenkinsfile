@@ -24,13 +24,13 @@ pipeline {
 
  stage ('Build') {
 
+ stage ('Unit Tests') {
+
  steps {
 
  dir ('exchange-cli') {
 
- sh "npm run build"
-
- }
+ sh "npm run test:unit"
 
  }
 
